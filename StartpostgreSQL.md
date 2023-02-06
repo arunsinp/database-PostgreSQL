@@ -221,14 +221,37 @@ Let's suppose that we have two tables- 'first_table' and 'second_table' and now 
 DROP TABLE 'second_table'
 ```
 
+## Step-14: Insert mmultiple entries of rows in a table
 
+Example: 'mario_database'
 
-
-## Step-14:
-
-
-
-
+```
+NSERT INTO characters(name, homeland, favorite_color)
+VALUES('Mario', 'Mushroom Kingdom', 'Red'),
+('Luigi', 'Mushroom Kingdom', 'Green'),
+('Peach', 'Mushroom Kingdom', 'Pink'),
+('Toadstool', 'Mushroom Kingdom', 'Red'),
+('Bowser', 'Mushroom Kingdom', 'Green')
+('Daisy', 'Sarasaland', 'Yellow'),
+('Yoshi', 'Dinosaur Land', 'Green');;
+```
+so we have created a mario database of-
+```
+mario_database=>    
+```
+**Output:**
++--------------+-----------+------------------+----------------+
+| character_id |   name    |     homeland     | favorite_color |
++--------------+-----------+------------------+----------------+
+|            1 | Mario     | Mushroom Kingdom | Red            |
+|            2 | Luigi     | Mushroom Kingdom | Green          |
+|            3 | Peach     | Mushroom Kingdom | Pink           |
+|            4 | Toadstool | Mushroom Kingdom | Red            |
+|            5 | Bowser    | Mushroom Kingdom | Green          |
+|            6 | Daisy     | Sarasaland       | Yellow         |
+|            7 | Yoshi     | Dinosaur Land    | Green          |
++--------------+-----------+------------------+----------------+
+```
 
 ## Step-15:
 
