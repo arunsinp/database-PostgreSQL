@@ -183,29 +183,15 @@ second_database=>                 Table "public.second_table"
 ALTER TABLE table_name DROP COLUMN column_name;
 ```
 
+## Step-10: Rename a column name
+```
+ALTER TABLE table_name RENAME COLUMN column_name TO new_name;
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Step-10: Add a column to the table
-
-
-
-
-
-
-
-## Step-10: Add a column to the table
+## Step-10: Add a data in a row
+```
+INSERT INTO table_name(column_1, column_2) VALUES(value1, value2);
+```
 
 
 
