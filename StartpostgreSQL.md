@@ -192,7 +192,61 @@ ALTER TABLE table_name RENAME COLUMN column_name TO new_name;
 ```
 INSERT INTO table_name(column_1, column_2) VALUES(value1, value2);
 ```
+## Step-11: To view the newly created table with the above entry
+```
+SELECT * FROM table_name;
+```
+Let's supposse, we have created 'second_table' with following table
+```
++----+----------+
+| id | username |
++----+----------+
+|  1 | samus    |
+|  1 | Samus    |
+|  2 | Mario    |
+|  3 | Luigi    |
++----+----------+
+```
 
+## Step-12: To delete a specific entry in a row
+
+To delete entry for 'Luigi'
+```
+second_database=> DELETE FROMM second_table WHERE username='Luigi'
+```
+
+## Step-13:
+
+
+
+
+## Step-14:
+
+
+
+
+
+## Step-15:
+
+
+
+
+## Step-16:
+
+
+## Step-17:
+
+
+
+
+
+## Step-18:
+
+
+
+
+
+## Step-19:
 
 
 
