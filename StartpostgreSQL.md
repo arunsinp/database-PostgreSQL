@@ -78,4 +78,35 @@ second_database=> \d
 ```
 **Output:** Did not find any relations.
 
+## Step-5: Creating a table
+
+Looks like there's no tables or relations yet. Similar to how you created a database, you can create a table like this:
+```
+CREATE TABLE table_name();
+```
+Note that the parenthesis are needed for this one. It will create the table in the database you are connected to. Create a table named `first_table` in `second_database`.
+
+```
+second_database=> CREATE TABLE first_table();
+```
+we can see the newly created table as
+```
+second_database=> \d
+```
+**Output:**
+```
+               List of relations
++--------+-------------+-------+--------------+
+| Schema |    Name     | Type  |    Owner     |
++--------+-------------+-------+--------------+
+| public | first_table | table | freecodecamp |
++--------+-------------+-------+--------------+
+```
+
+
+
+
+
+
+
 
