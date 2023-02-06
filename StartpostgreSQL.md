@@ -215,7 +215,11 @@ To delete entry for 'Luigi'
 second_database=> DELETE FROMM second_table WHERE username='Luigi'
 ```
 
-## Step-13:
+## Step-13: Drop a table
+Let's suppose that we have two tables- 'first_table' and 'second_table' and now we want to delet second one.
+```
+DROP TABLE 'second_table'
+```
 
 
 
