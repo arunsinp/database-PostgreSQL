@@ -240,6 +240,7 @@ so we have created a mario database of-
 mario_database=>    
 ```
 **Output:**
+```
 +--------------+-----------+------------------+----------------+
 | character_id |   name    |     homeland     | favorite_color |
 +--------------+-----------+------------------+----------------+
