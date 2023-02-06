@@ -102,6 +102,62 @@ second_database=> \d
 | public | first_table | table | freecodecamp |
 +--------+-------------+-------+--------------+
 ```
+To see the more details about a table: `\d table_name`.
+```
+second_database=> \d second_table
+```
+**Output:**
+```
+           Table "public.second_table"
++--------+------+-----------+----------+---------+
+| Column | Type | Collation | Nullable | Default |
++--------+------+-----------+----------+---------+
++--------+------+-----------+----------+---------+
+```
+## Step-6:
+
+Tables need columns to describe the data in them. To add a column:
+```
+ALTER TABLE table_name ADD COLUMN column_name DATATYPE;
+```
+To add a column, with name 'first_column' in 'second_table' with a datatype: INT
+```
+second_database=> ALTER TABLE second_table ADD COLUMN first_column INT
+```
+To check the changed column name, type
+```
+second_database=> \d second_table
+```
+**Output:**
+```
+                Table "public.second_table"
++--------------+---------+-----------+----------+---------+
+|    Column    |  Type   | Collation | Nullable | Default |
++--------------+---------+-----------+----------+---------+
+| first_column | integer |           |          |         |
++--------------+---------+-----------+----------+---------+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
