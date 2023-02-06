@@ -114,7 +114,7 @@ second_database=> \d second_table
 +--------+------+-----------+----------+---------+
 +--------+------+-----------+----------+---------+
 ```
-## Step-6:
+## Step-6: Add a column to the table
 
 Tables need columns to describe the data in them. To add a column:
 ```
@@ -137,6 +137,51 @@ second_database=> \d second_table
 | first_column | integer |           |          |         |
 +--------------+---------+-----------+----------+---------+
 ```
+## Step-7: Add a id to the newly created column to the table
+
+```
+second_database=> ALTER TABLE second_table ADD COLUMN id INT;
+```
+To check the added details are there:
+```
+\d second_table
+```
+**Output:** We can see the first_column with the id and integeer type is addeed.
+```
+second_database=>                 Table "public.second_table"
++--------------+---------+-----------+----------+---------+
+|    Column    |  Type   | Collation | Nullable | Default |
++--------------+---------+-----------+----------+---------+
+| first_column | integer |           |          |         |
+| id           | integer |           |          |         |
++--------------+---------+-----------+----------+---------+
+```
+
+## Step-8: Add a 'age' column to the table
+```
+second_database=> ALTER TABLE second_table ADD COLUMN age INT;
+```
+To see the modification of the table, use:
+```
+\d second_table
+```
+**Output:**
+```
+second_database=>                 Table "public.second_table"
++--------------+---------+-----------+----------+---------+
+|    Column    |  Type   | Collation | Nullable | Default |
++--------------+---------+-----------+----------+---------+
+| first_column | integer |           |          |         |
+| id           | integer |           |          |         |
+| age          | integer |           |          |         |
++--------------+---------+-----------+----------+---------+
+```
+
+## Step-9: Drop a column
+
+```
+ALTER TABLE table_name DROP COLUMN column_name;
+```
 
 
 
@@ -146,6 +191,21 @@ second_database=> \d second_table
 
 
 
+
+
+
+
+
+
+## Step-10: Add a column to the table
+
+
+
+
+
+
+
+## Step-10: Add a column to the table
 
 
 
