@@ -4,7 +4,7 @@ Here, I will disuss step by step to proseed with the postgreSQL on [freecodecamp
 ```
 codeally@147a091d400c:~/project$ psql --username=freecodecamp --dbname=postgres
 ```
-Output will be
+**Output:**
 ```
 Border style is 2.
 Title is " ".
@@ -23,7 +23,7 @@ postgres=>
 postgres=> \l
 
 ```
-Output:
+**Output:**
 
 ```
                                List of databases
@@ -46,7 +46,7 @@ postgres=> CREATE DATABASE first_database;
 The capitalized words are keywords telling PostgreSQL what to do. The name of the database 
 is the lowercase word. Note that all commands need a semi-colon at the end. Create a new database named `first_database`.
 
-Output:
+**Output:**
 ```
                                    List of databases
 +----------------+--------------+----------+---------+---------+-----------------------+
@@ -68,13 +68,14 @@ You can connect to a database by entering `\c database_name`. You need to connec
 ```
 postgres=> \c second_database
 ```
-Output:
-
-You are now connected to database "second_database" as user "freecodecamp.
+**Output:** You are now connected to database "second_database" as user "freecodecamp.
 
 
 You should see a message that you are connected. Notice that the prompt changed to `second_database=>`. So the `postgres=>` prompt before must have meant you were connected to that database. A database is made of tables that hold your data. Enter `\d` to display the tables.
 
-
+```
+second_database=> \d
+```
+**Output:** Did not find any relations.
 
 
