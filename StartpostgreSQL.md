@@ -41,10 +41,39 @@ Output:
 
 The databases you see are there by default. You can make your own like this:
 ```
-postgres=> CREATE DATABASE first_database
+postgres=> CREATE DATABASE first_database;
 ```
 The capitalized words are keywords telling PostgreSQL what to do. The name of the database 
 is the lowercase word. Note that all commands need a semi-colon at the end. Create a new database named `first_database`.
+
+Output:
+```
+                                   List of databases
++----------------+--------------+----------+---------+---------+-----------------------+
+|      Name      |    Owner     | Encoding | Collate |  Ctype  |   Access privileges   |
++----------------+--------------+----------+---------+---------+-----------------------+
+| first_database | freecodecamp | UTF8     | C.UTF-8 | C.UTF-8 |                       |
+| postgres       | postgres     | UTF8     | C.UTF-8 | C.UTF-8 |                       |
+| template0      | postgres     | UTF8     | C.UTF-8 | C.UTF-8 | =c/postgres          +|
+|                |              |          |         |         | postgres=CTc/postgres |
+| template1      | postgres     | UTF8     | C.UTF-8 | C.UTF-8 | =c/postgres          +|
+|                |              |          |         |         | postgres=CTc/postgres |
++----------------+--------------+----------+---------+---------+-----------------------+
+```
+
+## Step:4 connect with a database
+
+
+You can connect to a database by entering `\c database_name`. You need to connect to add information. Connect to your `second_database`.
+```
+postgres=> \c second_database
+```
+Output:
+
+You are now connected to database "second_database" as user "freecodecamp.
+
+
+You should see a message that you are connected. Notice that the prompt changed to `second_database=>`. So the `postgres=>` prompt before must have meant you were connected to that database. A database is made of tables that hold your data. Enter `\d` to display the tables.
 
 
 
