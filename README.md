@@ -165,3 +165,7 @@ In this section, you will start exploring the PostgreSQL data types and show you
 | How to generate a random number in a range  | illustrate how to generate a random number in a specific range.| 
 | EXPLAIN statement | guide you on how to use the EXPLAIN statement to return the execution plan of a query. |
 | PostgreSQL vs. MySQL | compare PostgreSQL with MySQL in terms of functionalities. |
+
+# Reference
+
+https://www.postgresqltutorial.com/
